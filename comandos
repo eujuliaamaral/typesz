@@ -1,0 +1,21 @@
+# Anotações — comandos usados para instalar dependências (formato: anotação + comando)
+
+# Passo a passo (execute na pasta do projeto, onde está `package.json`)
+
+# 1) Inicializar o projeto (apenas se ainda não existir `package.json`):
+npm init -y
+
+# 2) Instalar as dependências de desenvolvimento usadas neste projeto:
+npm install --save-dev typescript ts-node eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+# 3) (Opcional) Instalar tipos do Node caso vá usar APIs do Node com TypeScript:
+npm install --save-dev @types/node
+
+# 4) Se já houver `package.json` e `package-lock.json`, reinstale tudo:
+npm install
+
+# Comandos úteis para verificar o ambiente (anotações rápidas):
+# - Verificar versão do Node:
+node -v
+# - Verificar versão do npm:
+npm -v
